@@ -3,7 +3,7 @@
         <div class="header">Настойка профиля</div>
         <div class="user-avatar" >
             <label>
-                <my-input type="file" @change="uploadAvatar" />
+                <my-input type="file" @change="uploadAvatar" accept="image/*" />
                 <img :src="avatar ? avatarPath : require('@/assets/img/avatar.png')" alt="">
             </label>
             <div class="user-avatar__button" @click.stop="removeAvatar">
